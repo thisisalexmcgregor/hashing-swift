@@ -17,7 +17,7 @@
  */
 
 import Foundation
-import Blake2
+import BLAKE2
 
 /// Blake hashing error types
 enum BlakeError: Error {
@@ -32,10 +32,9 @@ private extension Data {
     ///     - Returns: Blake-hashed Data
     func blake2b(size: Int) throws -> Data {
         do {
-            var hasher = try Blake2(.b2b, size: size / 8)
-            hasher.update(self)
-            
-            return try hasher.finalize()
+            var hasher = try BLAKE2b(digestLength: size)
+            hasher.update(data: self)
+            return hasher.finalize()
         } catch let error {
             throw BlakeError.hashingFailure(error.localizedDescription)
         }

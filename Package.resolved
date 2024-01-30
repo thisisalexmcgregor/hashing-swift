@@ -19,15 +19,6 @@
       }
     },
     {
-      "identity" : "blake2.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tesseract-one/Blake2.swift",
-      "state" : {
-        "revision" : "106f68231100021e1f745779e241f81a065ad0de",
-        "version" : "0.1.2"
-      }
-    },
-    {
       "identity" : "common-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sublabdev/common-swift",
@@ -43,6 +34,15 @@
       "state" : {
         "revision" : "e26c87a262658bff240486ef3b0d47d30e8f0641",
         "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-blake2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lovetodream/swift-blake2.git",
+      "state" : {
+        "revision" : "b8074b87567037046445ce0859644c283dcce8cc",
+        "version" : "0.1.0"
       }
     },
     {
